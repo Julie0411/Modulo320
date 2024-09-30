@@ -4,13 +4,9 @@ public class Prova {
 
     public static void main(String[] args) {
 
-        Carta carta = new Carta();
-        carta.setSeme("Fiori");
-        carta.setValore("8");
+        Carta carta = new Carta("Fiori", "8");
 
-        Carta carta2 = new Carta();
-        carta2.setSeme("Picche");
-        carta2.setValore("2");
+        Carta carta2 = new Carta("Picche" , "2");
 
         Carta[] mazzo = new Carta[52];
         String[] semi = {"Cuori", "Quadri", "Fiori", "Picche"};
@@ -19,10 +15,7 @@ public class Prova {
 
         for (String seme : semi) {
             for (String valore : valori) {
-                Carta cartaMazzo = new Carta();
-                cartaMazzo.setSeme(seme);
-                cartaMazzo.setValore(valore);
-                mazzo[index] = cartaMazzo;
+                mazzo[index] = new Carta(seme, valore);
                 index++;
             }
         }

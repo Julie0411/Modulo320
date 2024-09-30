@@ -7,21 +7,17 @@ public class Carta {
 
     //quando creo i getter e i setter l'operazione si chiama incapsulamento
 
+    public Carta(String valore, String seme) {
+        this.valore = valore;
+        this.seme = seme;
+    }
+
     public String getValore() {
         return valore;
     }
 
-    public void setValore(String valore) {
-        this.valore = valore;
-    }
-
     public String getSeme() {
         return seme;
-    }
-
-    public void setSeme(String seme) {
-        this.seme = seme;
-
     }
 
     public String stringDellaCarta() {
