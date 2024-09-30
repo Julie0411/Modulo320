@@ -1,7 +1,5 @@
 package EsempioCarta;
 
-import java.util.Arrays;
-
 public class Prova {
 
     public static void main(String[] args) {
@@ -42,4 +40,5 @@ public class Prova {
         }
 
     }
+
 }

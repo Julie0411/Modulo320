@@ -28,9 +28,4 @@ public class Carta {
         return "Carta: " + this.valore + " di " + this.seme;
     }
 
-    @Override
-    public String toString() {
-        return "Carta: " + this.valore;
-    }
-
 }
