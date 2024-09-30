@@ -3,7 +3,7 @@ package EsempioCarta;
 public class MischiaCarte {
 
     public Carta[] mischia(Carta[] mazzo) {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < mazzo.length; i++) {
             int random = Math.round((int) (Math.random() * (mazzo.length)));
             int random1 = Math.round((int) (Math.random() * (mazzo.length)));
             Carta temp = mazzo[random];
