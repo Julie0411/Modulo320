@@ -6,7 +6,9 @@ public class Prova {
 
         Carta carta = new Carta("Fiori", "8");
 
-        Carta carta2 = new Carta("Picche" , "2");
+        Carta carta2 = new Carta("Fiori" , "8");
+
+        Carta carta3 = new Carta("Quadri" , "A");
 
         Carta[] mazzo = new Carta[52];
         String[] semi = {"Cuori", "Quadri", "Fiori", "Picche"};
@@ -31,6 +33,11 @@ public class Prova {
         for (Carta c : mazzo) {
             System.out.println(c.stringDellaCarta());
         }
+
+        System.out.println("--------------");
+
+        carta.confronto(carta2);
+        carta.confronto(carta3);
 
     }
 

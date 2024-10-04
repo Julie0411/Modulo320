@@ -24,4 +24,13 @@ public class Carta {
         return "Carta: " + this.valore + " di " + this.seme;
     }
 
+    public void confronto(Carta c) {
+        boolean verifica = this.valore.equals(c.getValore()) && this.seme.equals(c.seme);
+        if (verifica) {
+            System.out.println("Sono uguali");
+        } else {
+            System.out.println("Non sono uguali");
+        }
+    }
+
 }
