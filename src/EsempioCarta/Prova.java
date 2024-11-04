@@ -4,10 +4,9 @@ public class Prova {
 
     public static void main(String[] args) {
 
+        //Istanza = rappresentazione della classe
         Carta carta = new Carta("Fiori", "8");
-
         Carta carta2 = new Carta("Fiori" , "8");
-
         Carta carta3 = new Carta("Quadri" , "A");
 
         Carta[] mazzo = new Carta[52];
