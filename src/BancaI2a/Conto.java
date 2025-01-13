@@ -1,4 +1,4 @@
-package Banca;
+package BancaI2a;
 
 public class Conto {
 
@@ -79,7 +79,7 @@ public class Conto {
     }
 
     public String toString() {
-        return "Conto: " + this.codice + ", Saldo: " + this.saldo + " " + this.valuta + ", i conti totali sono: " + getNumConti() + " e appartiene a " + this.cliente.getNome() + " " + this.cliente.getCognome();
+        return "Conto: " + this.codice + ", Saldo: " + this.saldo + " " + this.valuta + ", questo conto appartiene a: " + this.cliente + ", i conti totali sono: " + getNumConti() ;
     }
 
 }

@@ -1,4 +1,4 @@
-package Banca;
+package BancaI2a;
 
 public class Main {
 
@@ -21,6 +21,7 @@ public class Main {
         banca.aggiungiConto(new Conto("ABC123", 123.45F, Valuta.CHF, cliente1));
         banca.aggiungiConto(new Conto("ABC124", 124.45F, Valuta.EUR, cliente2));
         banca.aggiungiConto(new Conto("ABC125", -125.45F, Valuta.USD, cliente3));
+        banca.aggiungiConto(new Conto("ABC126", 126.45F, Valuta.USD, cliente3));
         banca.stampaConti();
 
         Conto conto = banca.cercaConto("ABC125");
@@ -36,9 +37,9 @@ public class Main {
 
         banca.stampaContiNegativi();
 
-        System.out.println(banca.cercaContoPerCliente("Mario"));
-        System.out.println(banca.cercaContoPerCliente("6930"));
-        System.out.println(banca.cercaContoPerCliente("Di Venti"));
+        banca.cercaContoPerCliente("Mario");
+        banca.cercaContoPerCliente("6930");
+        banca.cercaContoPerCliente("Di Venti");
 
     }
 

@@ -1,4 +1,4 @@
-package Banca;
+package BancaI2a;
 
 public enum Valuta {
     CHF,

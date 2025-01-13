@@ -1,3 +1,5 @@
+package TeoriaInizioAnnoI2a;
+
 public class EsercizioArray {
 
     public static void main(String[] args) {

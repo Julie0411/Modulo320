@@ -1,4 +1,4 @@
-package EsempioCarta;
+package EsempioCartaI2a;
 
 public class Carta {
 

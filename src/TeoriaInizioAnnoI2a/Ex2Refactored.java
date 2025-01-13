@@ -1,3 +1,5 @@
+package TeoriaInizioAnnoI2a;
+
 import java.util.Scanner;
 
 public class Ex2Refactored {

@@ -1,4 +1,4 @@
-package Banca;
+package BancaI2a;
 
 public class Cliente {
     private String nome;
@@ -41,4 +41,8 @@ public class Cliente {
         return email;
     }
 
+    @Override
+    public String toString() {
+        return this.nome + this.cognome;
+    }
 }

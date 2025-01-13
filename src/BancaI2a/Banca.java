@@ -1,6 +1,7 @@
-package Banca;
+package BancaI2a;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Banca {
 
@@ -32,23 +33,26 @@ public class Banca {
         return null;
     }
 
-    public Conto cercaContoPerCliente(String dato) {
+    public void cercaContoPerCliente(String dato) {
+        List<Conto> conti = new ArrayList<>();
         for (Conto conto : this.conti) {
             if (conto.getCliente().getNome().equals(dato)) {
-                return conto;
+                conti.add(conto);
             } else if (conto.getCliente().getCognome().equals(dato)) {
-                return conto;
+                conti.add(conto);
             } else if (conto.getCliente().getVia().equals(dato)) {
-                return conto;
+                conti.add(conto);
             } else if (conto.getCliente().getCap().equals(dato)) {
-                return conto;
+                conti.add(conto);
             } else if (conto.getCliente().getCitta().equals(dato)) {
-                return conto;
+                conti.add(conto);
             } else if (conto.getCliente().getEmail().equals(dato)) {
-                return conto;
+                conti.add(conto);
             }
         }
-        return null;
+        for (Conto c : conti) {
+            System.out.println("Il conto " + c.getCodice() + " è di " + c.getCliente().getNome() + " " + c.getCliente().getCognome());
+        }
     }
 
     public void stampaContiNegativi() {
