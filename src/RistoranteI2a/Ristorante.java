@@ -34,7 +34,6 @@ public class Ristorante {
 
     public void annullaPrenotazione(int indice) {
         try {
-            prenotazioni.get(indice).getTavoloAssegnato().setTavolo();
             prenotazioni.remove(indice);
         } catch (Exception e) {
             System.out.println("Non hai prenotazioni attive, creane una!");
